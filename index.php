@@ -29,10 +29,17 @@ require_once("config.php");
 //$aluno->insert();
 //echo $aluno;
 
-// update no banco de dados
+/* update no banco de dados
 $usuario = new Usuario();
 $usuario->loadbyId(8);
 $usuario->update("professor", "!@#$");
+echo $usuario;
+*/
+
+// delete no banco de dados
+$usuario = new Usuario();
+$usuario->loadbyId(7);
+$usuario->delete();
 echo $usuario;
 
 
