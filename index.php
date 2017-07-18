@@ -20,8 +20,20 @@ require_once("config.php");
 //echo json_encode($search);
 
 // carrega usuario usando o ligin e senha
+//$usuario = new Usuario();
+//$usuario->login("carlos","!@#$");
+//echo $usuario;
+
+// inserir no banco de dados
+//$aluno = new Usuario("aluno","@lun0");
+//$aluno->insert();
+//echo $aluno;
+
+// update no banco de dados
 $usuario = new Usuario();
-$usuario->login("carlos","!@#$");
+$usuario->loadbyId(8);
+$usuario->update("professor", "!@#$");
 echo $usuario;
+
 
 ?>
